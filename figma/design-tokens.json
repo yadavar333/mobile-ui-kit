@@ -1,0 +1,49 @@
+{
+  "color": {
+    "primary":        { "value": "#6366F1", "type": "color" },
+    "primary-dark":   { "value": "#818CF8", "type": "color" },
+    "secondary":      { "value": "#EC4899", "type": "color" },
+    "success":        { "value": "#10B981", "type": "color" },
+    "warning":        { "value": "#F59E0B", "type": "color" },
+    "error":          { "value": "#EF4444", "type": "color" },
+    "surface-light":  { "value": "#FFFFFF", "type": "color" },
+    "surface-dark":   { "value": "#1E1E2E", "type": "color" },
+    "bg-light":       { "value": "#F8F8FC", "type": "color" },
+    "bg-dark":        { "value": "#13131F", "type": "color" },
+    "text-primary-light":   { "value": "#111827", "type": "color" },
+    "text-secondary-light": { "value": "#6B7280", "type": "color" },
+    "text-primary-dark":    { "value": "#F3F4F6", "type": "color" },
+    "text-secondary-dark":  { "value": "#9CA3AF", "type": "color" },
+    "border-light": { "value": "#E5E7EB", "type": "color" },
+    "border-dark":  { "value": "#374151", "type": "color" }
+  },
+  "spacing": {
+    "xs":  { "value": "4px",  "type": "spacing" },
+    "sm":  { "value": "8px",  "type": "spacing" },
+    "md":  { "value": "16px", "type": "spacing" },
+    "lg":  { "value": "24px", "type": "spacing" },
+    "xl":  { "value": "32px", "type": "spacing" },
+    "2xl": { "value": "48px", "type": "spacing" }
+  },
+  "typography": {
+    "display":    { "size": "2.25rem", "weight": 700, "lineHeight": 1.2 },
+    "headline":   { "size": "1.5rem",  "weight": 600, "lineHeight": 1.3 },
+    "title":      { "size": "1.125rem","weight": 600, "lineHeight": 1.4 },
+    "body":       { "size": "1rem",    "weight": 400, "lineHeight": 1.5 },
+    "body-sm":    { "size": "0.875rem","weight": 400, "lineHeight": 1.5 },
+    "label":      { "size": "0.75rem", "weight": 500, "lineHeight": 1.4 },
+    "caption":    { "size": "0.6875rem","weight": 400, "lineHeight": 1.4 }
+  },
+  "radius": {
+    "sm":   { "value": "4px",   "type": "borderRadius" },
+    "md":   { "value": "8px",   "type": "borderRadius" },
+    "lg":   { "value": "12px",  "type": "borderRadius" },
+    "xl":   { "value": "16px",  "type": "borderRadius" },
+    "full": { "value": "9999px","type": "borderRadius" }
+  },
+  "shadow": {
+    "sm":  { "value": "0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06)" },
+    "md":  { "value": "0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06)" },
+    "lg":  { "value": "0 10px 15px rgba(0,0,0,.10), 0 4px 6px rgba(0,0,0,.05)" }
+  }
+}

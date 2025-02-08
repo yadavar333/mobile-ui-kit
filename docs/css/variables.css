@@ -1,0 +1,89 @@
+/* ── Design Tokens — Light Mode (default) ──────────────────────────────── */
+:root {
+  /* Colours */
+  --color-primary:         #6366F1;
+  --color-primary-hover:   #4F46E5;
+  --color-primary-light:   #EEF2FF;
+  --color-secondary:       #EC4899;
+  --color-success:         #10B981;
+  --color-success-light:   #ECFDF5;
+  --color-warning:         #F59E0B;
+  --color-warning-light:   #FFFBEB;
+  --color-error:           #EF4444;
+  --color-error-light:     #FEF2F2;
+
+  /* Surfaces */
+  --bg:              #F8F8FC;
+  --surface:         #FFFFFF;
+  --surface-variant: #F3F4F6;
+  --overlay:         rgba(0, 0, 0, 0.45);
+
+  /* Text */
+  --text-primary:    #111827;
+  --text-secondary:  #6B7280;
+  --text-disabled:   #9CA3AF;
+  --text-on-primary: #FFFFFF;
+
+  /* Borders */
+  --border:          #E5E7EB;
+  --border-focus:    #6366F1;
+  --border-error:    #EF4444;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,.10), 0 4px 6px rgba(0,0,0,.05);
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+
+  /* Radius */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  --font-display:  clamp(1.75rem, 4vw, 2.25rem);
+  --font-headline: 1.5rem;
+  --font-title:    1.125rem;
+  --font-body:     1rem;
+  --font-body-sm:  0.875rem;
+  --font-label:    0.75rem;
+  --font-caption:  0.6875rem;
+
+  /* Transitions */
+  --transition: 150ms ease;
+}
+
+/* ── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --color-primary:       #818CF8;
+  --color-primary-hover: #A5B4FC;
+  --color-primary-light: #1E1B4B;
+
+  --bg:              #13131F;
+  --surface:         #1E1E2E;
+  --surface-variant: #2A2A3E;
+  --overlay:         rgba(0, 0, 0, 0.65);
+
+  --text-primary:    #F3F4F6;
+  --text-secondary:  #9CA3AF;
+  --text-disabled:   #4B5563;
+  --text-on-primary: #FFFFFF;
+
+  --border:        #374151;
+  --border-focus:  #818CF8;
+  --border-error:  #F87171;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.40);
+  --shadow-md: 0 4px 6px rgba(0,0,0,.35);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,.45);
+}
