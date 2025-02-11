@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App UI Kit</title>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/atoms.css">
+  <link rel="stylesheet" href="css/molecules.css">
+  <link rel="stylesheet" href="css/organisms.css">
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <div>
+    <h1>Mobile App UI Kit</h1>
+    <p>12 components · 3 tiers · light &amp; dark mode</p>
+  </div>
+  <button id="theme-toggle">🌙 Dark mode</button>
+</header>
+
+<div class="wrapper">
+
+<!-- ════════════════════════════════════════════════════════════
+     TIER 1 — ATOMS
+════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <span class="tier-label">Tier 1</span>
+  <h2 class="section-title">Atoms</h2>
+  <p class="section-subtitle">The smallest building blocks — buttons, inputs, avatars, badges.</p>
+
+  <!-- 1. Button -->
+  <div class="component-group">
+    <h3>1. Button</h3>
+    <p class="meta">4 variants × 3 sizes × 4 states</p>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Filled</p>
+    <div class="row" style="margin-bottom:16px">
+      <button class="btn btn-filled btn-sm">Small</button>
+      <button class="btn btn-filled btn-md">Medium</button>
+      <button class="btn btn-filled btn-lg">Large</button>
+      <button class="btn btn-filled btn-md" disabled>Disabled</button>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Outlined</p>
+    <div class="row" style="margin-bottom:16px">
+      <button class="btn btn-outlined btn-sm">Small</button>
+      <button class="btn btn-outlined btn-md">Medium</button>
+      <button class="btn btn-outlined btn-lg">Large</button>
+      <button class="btn btn-outlined btn-md" disabled>Disabled</button>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Text / Ghost</p>
+    <div class="row" style="margin-bottom:16px">
+      <button class="btn btn-text btn-sm">Small</button>
+      <button class="btn btn-text btn-md">Medium</button>
+      <button class="btn btn-text btn-lg">Large</button>
+      <button class="btn btn-text btn-md" disabled>Disabled</button>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Elevated</p>
+    <div class="row">
+      <button class="btn btn-elevated btn-sm">Small</button>
+      <button class="btn btn-elevated btn-md">Medium</button>
+      <button class="btn btn-elevated btn-lg">Large</button>
+      <button class="btn btn-danger btn-md">Danger</button>
+    </div>
+  </div>
+
+  <!-- 2. Text Input -->
+  <div class="component-group">
+    <h3>2. Text Input</h3>
+    <p class="meta">4 states — default · focused (click) · error · disabled</p>
+    <div class="col-2">
+      <div class="input-group">
+        <label class="input-label">Default</label>
+        <input class="input-field" type="text" placeholder="Enter value…">
+      </div>
+      <div class="input-group">
+        <label class="input-label">With helper text</label>
+        <input class="input-field" type="email" placeholder="name@example.com">
+        <span class="input-helper">We'll never share your email.</span>
+      </div>
+      <div class="input-group">
+        <label class="input-label">Error state</label>
+        <input class="input-field input-error" type="text" value="bad value">
+        <span class="input-helper error">⚠ This field is required.</span>
+      </div>
+      <div class="input-group">
+        <label class="input-label">Disabled</label>
+        <input class="input-field" type="text" value="Cannot edit" disabled>
+        <span class="input-helper">This field is locked.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Avatar -->
+  <div class="component-group">
+    <h3>3. Avatar</h3>
+    <p class="meta">5 sizes · 6 colour variants · image · online status</p>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Sizes</p>
+    <div class="row" style="margin-bottom:16px;align-items:flex-end">
+      <span class="avatar avatar-xs avatar-purple">A</span>
+      <span class="avatar avatar-sm avatar-pink">B</span>
+      <span class="avatar avatar-md avatar-green">C</span>
+      <span class="avatar avatar-lg avatar-amber">D</span>
+      <span class="avatar avatar-xl avatar-blue">E</span>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">With status + ring</p>
+    <div class="row">
+      <div class="avatar-wrapper">
+        <span class="avatar avatar-md avatar-purple avatar-ring">Y</span>
+        <span class="status-dot"></span>
+      </div>
+      <div class="avatar-wrapper">
+        <span class="avatar avatar-md avatar-red">X</span>
+        <span class="status-dot" style="background:var(--color-warning)"></span>
+      </div>
+      <span class="avatar avatar-md" style="background:var(--surface-variant);color:var(--text-secondary)">👤</span>
+    </div>
+  </div>
+
+  <!-- 4. Badge + Chip -->
+  <div class="component-group">
+    <h3>4. Badge &amp; Chip</h3>
+    <p class="meta">Badge — 5 colour variants (tinted &amp; filled) · Chip — filter/input/active</p>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Tinted badges</p>
+    <div class="row" style="margin-bottom:12px">
+      <span class="badge badge-primary">Primary</span>
+      <span class="badge badge-success">Success</span>
+      <span class="badge badge-warning">Warning</span>
+      <span class="badge badge-error">Error</span>
+      <span class="badge badge-neutral">Neutral</span>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Filled badges</p>
+    <div class="row" style="margin-bottom:16px">
+      <span class="badge badge-primary filled">Primary</span>
+      <span class="badge badge-success filled">Success</span>
+      <span class="badge badge-error filled">Error</span>
+      <span class="badge badge-warning filled">Warning</span>
+      <span class="badge badge-dot">4</span>
+      <span class="badge badge-dot">99+</span>
+    </div>
+
+    <p style="font-size:var(--font-body-sm);font-weight:600;margin-bottom:8px;color:var(--text-secondary)">Chips</p>
+    <div class="row">
+      <span class="chip">Design</span>
+      <span class="chip active">Flutter ✓</span>
+      <span class="chip">React <span class="chip-x">×</span></span>
+      <span class="chip">Mobile</span>
+      <span class="chip active">UI Kit ✓</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     TIER 2 — MOLECULES
+════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <span class="tier-label">Tier 2</span>
+  <h2 class="section-title">Molecules</h2>
+  <p class="section-subtitle">Components composed from atoms — cards, lists, forms.</p>
+
+  <!-- 5. Card -->
+  <div class="component-group">
+    <h3>5. Card</h3>
+    <p class="meta">3 variants — elevated · outlined · filled</p>
+    <div class="col-2">
+      <div class="card card-elevated">
+        <div class="card-media">🖼</div>
+        <div class="card-body">
+          <div class="card-title">Elevated Card</div>
+          <div class="card-subtitle">Shadows on rest, lifts on hover</div>
+          <p class="card-text">Use for primary content surfaces that need visual prominence.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-filled btn-sm">Action</button>
+          <button class="btn btn-text btn-sm">Learn more</button>
+        </div>
+      </div>
+
+      <div class="card card-outlined">
+        <div class="card-media" style="background:var(--color-success-light);color:var(--color-success)">🌿</div>
+        <div class="card-body">
+          <div class="card-title">Outlined Card</div>
+          <div class="card-subtitle">Border highlights on hover</div>
+          <p class="card-text">Use when you want a subtle container without depth.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-outlined btn-sm">Action</button>
+          <button class="btn btn-text btn-sm">Dismiss</button>
+        </div>
+      </div>
+
+      <div class="card card-filled card-horizontal">
+        <div class="card-media" style="width:90px;background:var(--color-warning-light);color:var(--color-warning)">⭐</div>
+        <div class="card-body">
+          <div class="card-title">Filled — Horizontal</div>
+          <div class="card-subtitle">Compact horizontal layout</div>
+          <p class="card-text">Great for list items with media.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. List Item -->
+  <div class="component-group">
+    <h3>6. List Item</h3>
+    <p class="meta">3 trailing variants — none · chevron · badge · toggle</p>
+    <nav class="list">
+      <a class="list-item">
+        <span class="list-item-icon">🔔</span>
+        <div class="list-item-content">
+          <div class="list-item-title">Notifications</div>
+          <div class="list-item-sub">Push, email, SMS</div>
+        </div>
+        <span class="badge badge-error filled badge-dot">3</span>
+      </a>
+      <a class="list-item">
+        <span class="list-item-icon">🎨</span>
+        <div class="list-item-content">
+          <div class="list-item-title">Appearance</div>
+          <div class="list-item-sub">Theme, colours, font size</div>
+        </div>
+        <span class="list-item-trail chevron"></span>
+      </a>
+      <a class="list-item">
+        <span class="list-item-icon">🔒</span>
+        <div class="list-item-content">
+          <div class="list-item-title">Privacy &amp; Security</div>
+          <div class="list-item-sub">2FA, sessions, data</div>
+        </div>
+        <span class="list-item-trail chevron"></span>
+      </a>
+      <div class="list-item">
+        <span class="list-item-icon">🌙</span>
+        <div class="list-item-content">
+          <div class="list-item-title">Dark mode</div>
+          <div class="list-item-sub">Follow system setting</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" checked>
+          <span class="toggle-track"></span>
+        </label>
+      </div>
+      <div class="list-item">
+        <span class="list-item-icon">📶</span>
+        <div class="list-item-content">
+          <div class="list-item-title">Offline mode</div>
+          <div class="list-item-sub">Sync when connected</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="toggle-track"></span>
+        </label>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 7. Form Group -->
+  <div class="component-group">
+    <h3>7. Form Group</h3>
+    <p class="meta">Label · Input · Helper — required / optional / error</p>
+    <div class="col-2">
+      <div class="form-group">
+        <label class="form-label required">Full name</label>
+        <input class="input-field" type="text" placeholder="Yadav A">
+        <span class="form-helper">As it appears on your ID.</span>
+      </div>
+      <div class="form-group">
+        <label class="form-label required">Email</label>
+        <input class="input-field input-error" type="email" value="invalid-email">
+        <span class="form-helper error">⚠ Enter a valid email address.</span>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Username <span style="color:var(--text-secondary);font-weight:400">(optional)</span></label>
+        <input class="input-field" type="text" placeholder="@handle">
+        <span class="form-helper">Used for mentions and profile URL.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Toggle Switch -->
+  <div class="component-group">
+    <h3>8. Toggle Switch</h3>
+    <p class="meta">on · off · disabled states</p>
+    <div class="row-col" style="max-width:300px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+        <span style="font-size:var(--font-body-sm)">Enabled (on)</span>
+        <label class="toggle"><input type="checkbox" checked><span class="toggle-track"></span></label>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+        <span style="font-size:var(--font-body-sm)">Enabled (off)</span>
+        <label class="toggle"><input type="checkbox"><span class="toggle-track"></span></label>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+        <span style="font-size:var(--font-body-sm);color:var(--text-disabled)">Disabled (on)</span>
+        <label class="toggle"><input type="checkbox" checked disabled><span class="toggle-track"></span></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     TIER 3 — ORGANISMS
+════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <span class="tier-label">Tier 3</span>
+  <h2 class="section-title">Organisms</h2>
+  <p class="section-subtitle">Full UI patterns — navigation bars, modals, sheets.</p>
+
+  <!-- 9. App Bar -->
+  <div class="component-group">
+    <h3>9. App Bar</h3>
+    <p class="meta">Standard · Large title variants</p>
+    <div class="row-col" style="gap:16px;max-width:400px">
+      <div class="app-bar" style="border-radius:var(--radius-lg)">
+        <button class="icon-btn">←</button>
+        <span class="app-bar-title">Settings</span>
+        <div class="app-bar-actions">
+          <button class="icon-btn">🔍</button>
+          <button class="icon-btn">⋮</button>
+        </div>
+      </div>
+      <div class="app-bar app-bar-large" style="border-radius:var(--radius-lg)">
+        <div class="app-bar-row">
+          <span style="flex:1"></span>
+          <div class="app-bar-actions">
+            <button class="icon-btn">🔍</button>
+            <div class="avatar-wrapper">
+              <span class="avatar avatar-sm avatar-purple">Y</span>
+              <span class="status-dot"></span>
+            </div>
+          </div>
+        </div>
+        <span class="app-bar-title-large">Good morning 👋</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Bottom Nav Bar -->
+  <div class="component-group">
+    <h3>10. Bottom Nav Bar</h3>
+    <p class="meta">4 tabs — active state · badge · indicator strip</p>
+    <div style="max-width:420px;border:1px solid var(--border);border-radius:var(--radius-xl);overflow:hidden">
+      <nav class="bottom-nav">
+        <button class="nav-item active">
+          <span class="nav-indicator"></span>
+          <span class="nav-icon">🏠</span>
+          <span class="nav-label">Home</span>
+        </button>
+        <button class="nav-item" style="position:relative">
+          <span class="nav-icon">🔍</span>
+          <span class="nav-label">Explore</span>
+        </button>
+        <button class="nav-item" style="position:relative">
+          <span class="nav-badge">3</span>
+          <span class="nav-icon">🔔</span>
+          <span class="nav-label">Alerts</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon">👤</span>
+          <span class="nav-label">Profile</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 11. Modal -->
+  <div class="component-group">
+    <h3>11. Modal / Dialog</h3>
+    <p class="meta">Title · body · action buttons · backdrop overlay</p>
+    <div class="modal-backdrop">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-title">Delete account?</div>
+          <div class="modal-subtitle">This action cannot be undone.</div>
+        </div>
+        <div class="modal-body">
+          All your data — contacts, messages, and preferences — will be permanently deleted.
+          You will not be able to recover this account.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-text btn-sm">Cancel</button>
+          <button class="btn btn-danger btn-sm">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Bottom Sheet -->
+  <div class="component-group">
+    <h3>12. Bottom Sheet</h3>
+    <p class="meta">Drag handle · title · action list</p>
+    <div class="bottom-sheet-container">
+      <div class="bottom-sheet" style="border-radius:var(--radius-xl)">
+        <div class="sheet-handle"></div>
+        <div class="sheet-title">Share this post</div>
+        <div class="sheet-item">
+          <span class="sheet-item-icon">📋</span>
+          Copy link
+        </div>
+        <div class="sheet-item">
+          <span class="sheet-item-icon">📨</span>
+          Send via message
+        </div>
+        <div class="sheet-item">
+          <span class="sheet-item-icon">✉️</span>
+          Share by email
+        </div>
+        <div class="sheet-item" style="color:var(--color-error)">
+          <span class="sheet-item-icon" style="background:var(--color-error-light);color:var(--color-error)">🚩</span>
+          Report content
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Colour Palette ────────────────────────────────────────────────── -->
+<section class="section">
+  <h2 class="section-title">Colour Tokens</h2>
+  <p class="section-subtitle">All values defined as CSS custom properties — changes propagate everywhere.</p>
+  <div class="token-grid">
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--color-primary)"></div>
+      <div>Primary</div>
+      <div class="value">#6366F1 / #818CF8</div>
+    </div>
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--color-secondary)"></div>
+      <div>Secondary</div>
+      <div class="value">#EC4899</div>
+    </div>
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--color-success)"></div>
+      <div>Success</div>
+      <div class="value">#10B981</div>
+    </div>
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--color-warning)"></div>
+      <div>Warning</div>
+      <div class="value">#F59E0B</div>
+    </div>
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--color-error)"></div>
+      <div>Error</div>
+      <div class="value">#EF4444</div>
+    </div>
+    <div class="token-swatch">
+      <div class="color-swatch" style="background:var(--surface);border:1px solid var(--border)"></div>
+      <div>Surface</div>
+      <div class="value">adaptive</div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /wrapper -->
+</body>
+</html>
